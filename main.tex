@@ -1,0 +1,85 @@
+\documentclass[a4paper,11pt]{article}
+% \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+% \thispagestyle{empty}
+% \settextfont{FontAwesome.ttf}
+% \setlatintextfont{FontAwesome.ttf}
+% \settextfont{}
+% \setlatintextfont[Scale=1]{Times New Roman}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Example photograph taken from Wikimedia Commons
+% https://commons.wikimedia.org/wiki/File:Kiara_Krit_passport.jpg
+% Requirements to use.
+
+% % Define shortcut to load the Font Awesome font.
+% \newfontfamily{\FA}{FontAwesome}
+
+% \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
+
+\usepackage{simplecv}
+
+\usepackage{fontspec}
+\setmainfont{Clear Sans}
+% Liberation sans/serif
+
+% \boldname{Surname}{Name}{N.}
+
+\begin{document}
+% Heading
+\headinginline{Nima Hosseini Dashtbayaz}{
+    % Website: \website{example.com} \\ 
+    Email: \email{nimahsnd@gmail.com} \\
+    LinkedIn: \linkedin{nimahsn} \\
+    GitHub: \github{nimahsn} \\
+    % Address: \address{AhmadAbad Blvd, Mashhad} \\
+    Phone: \href{tel:989153831909}{(+98) 915 383 1909}
+}
+
+% \headingphoto{Name Surname}{
+%     Website: \website{example.com} \\ 
+%     Email: \email{example@example.edu} \\
+%     LinkedIn: \linkedin{name-surname} \\
+%     GitHub: \github{example}
+% }{photo.jpg}
+
+% Page One
+\import{sections/}{education.tex}
+% \import{sections/}{experience.tex}
+% \import{sections/}{publications.tex}
+% \sidebyside
+\import{sections/}{skills.tex}
+\import{sections/}{experience.tex}
+% \pagebreak
+\import{sections/}{projects.tex}
+\import{sections/}{certificates.tex}
+\import{sections/}{languages.tex}
+% \import{sections/}{teaching.tex}
+% \section{Activities}
+% \begin{Activites}
+% \outerlist{
+
+% \entrybig
+% 	{\textbf{Students Scientific Association}}{Amirkabir University}
+% 	{Member of the students' scientific chapter of Mathematics and Computer Science faculty}{September 2020\textendash Current}
+% 	\innerlist{
+% 	    \entry{Chief Editor of Halgheh journal}
+% 	}
+% }
+% \end{Activites}
+% \import{sections/}{references.tex}
+
+% \pagebreak
+
+% Page Two
+% \import{sections/}{teaching.tex}
+% \import{sections/}{extracurricular.tex}
+
+\end{document}
